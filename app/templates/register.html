@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block page_content %}
+    <h1>Register</h1>
+    <p>Two factor auth can be set up from the Settings page once you have logged in</p>
+    {{ wtf.quick_form(form) }}
+    <br>
+{% endblock %}
